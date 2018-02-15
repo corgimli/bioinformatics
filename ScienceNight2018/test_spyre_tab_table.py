@@ -1,4 +1,6 @@
 from spyre import server
+
+import os
 import pandas as pd
 import seq_match
 
@@ -44,4 +46,5 @@ class Burger(server.App):
 		return df
 
 app = Burger()
-app.launch(port=9093)
+# app.launch(port=9093)
+app.launch(host='0.0.0.0', port=int(os.environ.get('PORT', '5000')))
