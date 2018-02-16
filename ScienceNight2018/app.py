@@ -5,7 +5,7 @@ import pandas as pd
 import seq_match
 
 class Burger(server.App):
-	title = "What's in your burger?"
+	title = "What is in your mystery soup?"
 
 	inputs = [{
 		"type": "text",
